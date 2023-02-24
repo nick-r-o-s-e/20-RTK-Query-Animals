@@ -1,4 +1,4 @@
-# Foobar
+# RTK-Query-React
 
 Foobar is a Python library for dealing with word pluralization.
 
