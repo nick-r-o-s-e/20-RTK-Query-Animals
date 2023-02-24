@@ -1,0 +1,138 @@
+.new-animal {
+  width: 70%;
+  display: flex;
+  max-width: 600px;
+  margin-top: 4em;
+  flex-direction: column;
+  font-size: 1em;
+  padding: 1em 2em;
+  border-radius: 10px;
+  background-color: #672fa6;
+
+  hr {
+    border-top: 3px solid rgb(37, 0, 65);
+  }
+
+  .name-group {
+    display: flex;
+    justify-content: space-between;
+    .group-div {
+      position: relative;
+
+      .validation-label {
+        position: absolute;
+        top: 105%;
+        left: 2%;
+        color: #ff5555;
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    letter-spacing: 0.12em;
+    margin-top: 0.3em;
+  }
+
+  label {
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    font-size: 1.4em;
+    color: #fff;
+  }
+
+  input,
+  select {
+    font-size: 1.3em;
+    background-color: #e9eef1 !important;
+  }
+
+  .dropdown {
+    cursor: pointer !important;
+
+    .filter {
+      &__input {
+        cursor: pointer !important;
+        background-color: transparent !important;
+      }
+
+      &__option {
+        cursor: pointer !important;
+      }
+    }
+    &.select-err {
+      border-radius: 0.375rem;
+      border: 2px solid red;
+      box-shadow: 0 0 10px 5px rgba($color: #ff0000, $alpha: 0.3);
+    }
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+  }
+
+  .detail {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  button {
+    width: 30%;
+    font-size: 1.4em;
+    line-height: 200%;
+    place-self: center !important;
+    margin: 1.5em 0 1em 50%;
+    translate: -50%;
+  }
+}
+
+.file-upload {
+  border: none;
+  border-radius: 3px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5em;
+  border-radius: 0.375rem;
+  font-size: 1.3em !important;
+  font-weight: 400 !important;
+  background-color: #3c126c;
+}
+
+.file-upload input {
+  overflow: hidden;
+  width: 0;
+}
+
+.image-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+
+  .image-input-label {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    .file-upload {
+      cursor: pointer;
+    }
+  }
+
+  .image-placeholder {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.375rem;
+    width: 60%;
+    height: 10em;
+  }
+}

@@ -1,0 +1,91 @@
+nav {
+  background-color: #bb7fff !important;
+  padding: 0.7em !important;
+
+  .navbar-nav {
+    margin-right: 1.7em !important;
+  }
+
+  #new-animal {
+    position: relative;
+    .nav-arrow {
+      color: #fdb8ff;
+      font-size: 2em;
+      position: absolute;
+      top: 170%;
+      left: 50%;
+      translate: -50%;
+      margin: 0 auto;
+      animation-name: stretch;
+      animation-duration: 1.5s;
+      animation-timing-function: ease-out;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+
+      @keyframes stretch {
+        0% {
+          transform: scale(1.5);
+          color: aliceblue;
+        }
+
+        50% {
+          color: #fdb8ff;
+        }
+
+        100% {
+          color: #e681ff;
+          transform: scale(2);
+        }
+      }
+    }
+  }
+
+  a {
+    font-size: 1.4em !important;
+
+    &.nav-link.active {
+      font-weight: 500;
+      text-shadow: 0 2px 3px rgba($color: #000000, $alpha: 0.2) !important;
+    }
+  }
+
+  .navbar-brand {
+    font-family: "Gajraj One", cursive;
+    letter-spacing: 0.3em;
+    font-size: 3em !important;
+    line-height: 100%;
+    padding: 0;
+    letter-spacing: 0.2em;
+    margin-top: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    float: none;
+    margin: 0 0 0 auto;
+    display: flex;
+    gap: 1.7em;
+  }
+
+  .navbar-nav > li {
+    display: inline-block;
+    float: none;
+  }
+}
+@media (max-width: 1100px) and (min-width: 992px) {
+  .navbar-nav {
+    float: none;
+    margin: 0 auto;
+    display: flex;
+    gap: 0;
+    text-align: center;
+    translate: -10%;
+  }
+
+  .navbar-nav > li {
+    display: inline-block;
+    float: none;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "20-hw-redux-animals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-app": "concurrently -n react,express -c black.bgCyan,black.bgGreen --kill-others \"cd react-app && npm run dev\" \"cd express && npm run start:nodemon\"",
+    "npm-install_start-app": "npm i && concurrently -n react,express -c black.bgCyan,black.bgGreen --kill-others \"cd react-app && npm i && npm run dev\" \"cd express && npm i && npm run start:nodemon\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

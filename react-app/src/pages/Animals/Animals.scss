@@ -1,0 +1,33 @@
+.animals-page {
+  width: 100%;
+  max-width: 2000px;
+  display: flex;
+  justify-content: center;
+  margin: 4em 0;
+  .animals {
+    display: grid;
+    width: 85%;
+    gap: 4em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .animals {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media screen and (min-width: 800px) {
+  .animals {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .animals {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .animals {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
